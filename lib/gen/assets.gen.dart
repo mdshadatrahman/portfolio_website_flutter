@@ -19,10 +19,30 @@ class $AssetsLottieGen {
   List<String> get values => [notFound];
 }
 
+class $AssetsSvgGen {
+  const $AssetsSvgGen();
+
+  /// File path: assets/svg/facebook.svg
+  String get facebook => 'assets/svg/facebook.svg';
+
+  /// File path: assets/svg/insta.svg
+  String get insta => 'assets/svg/insta.svg';
+
+  /// File path: assets/svg/linkedin.svg
+  String get linkedin => 'assets/svg/linkedin.svg';
+
+  /// File path: assets/svg/mail.svg
+  String get mail => 'assets/svg/mail.svg';
+
+  /// List of all assets
+  List<String> get values => [facebook, insta, linkedin, mail];
+}
+
 class Assets {
   Assets._();
 
   static const $AssetsLottieGen lottie = $AssetsLottieGen();
+  static const $AssetsSvgGen svg = $AssetsSvgGen();
 }
 
 class AssetGenImage {

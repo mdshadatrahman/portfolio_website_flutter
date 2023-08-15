@@ -30,6 +30,9 @@ class MyApp extends StatelessWidget {
       routeInformationProvider: AppRoutes().router.routeInformationProvider,
       routeInformationParser: AppRoutes().router.routeInformationParser,
       routerDelegate: AppRoutes().router.routerDelegate,
+      theme: ThemeData(
+        fontFamily: 'Poppins',
+      ),
     );
   }
 }
